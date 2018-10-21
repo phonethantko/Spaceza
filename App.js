@@ -2,9 +2,11 @@ import React from 'react';
 import { Alert, StyleSheet, Button, Text, TextInput, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
+import WelcomePage from './src/WelcomePage'
 import LandingPage from './src/LandingPage'
 import CameraPage from './src/CameraPage'
 import FilterSelectionPage from './src/FilterSelectionPage'
+import FinalPage from './src/FinalPage'
 
 export default class App extends React.Component {
   render() {
@@ -15,6 +17,9 @@ export default class App extends React.Component {
 }
 
 const AppStackNavigator = createStackNavigator({
+  Welcome: {
+    screen: WelcomePage
+  },
   Landing: {
     screen: LandingPage
   },
@@ -23,6 +28,9 @@ const AppStackNavigator = createStackNavigator({
   },
   Filter: {
     screen: FilterSelectionPage
+  },
+  Final: {
+    screen: FinalPage
   }
 
 });

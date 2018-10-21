@@ -41,7 +41,6 @@ export default class CameraPage extends React.Component {
                 flexDirection: 'row',
               }}>
 
-              // Flip Button
               <TouchableOpacity
                 style={{
                   flex: 0.1,
@@ -61,7 +60,6 @@ export default class CameraPage extends React.Component {
                 </Text>
               </TouchableOpacity>
 
-              // Snap Button
               <TouchableOpacity
                 style={{
                   flex: 0.3,
